@@ -1,120 +1,133 @@
-# Mis Finanzas – Sistema de Control de Gastos
+# 💰 MIS FINANZAS – Sistema de Control de Gastos
 
-Aplicación web académica desarrollada con Python, Flask y SQLite. Permite iniciar sesión, registrar gastos, consultar un resumen y generar reportes por rango de fechas con opción de exportación CSV.
+## 📌 Descripción del proyecto
 
-## Funcionalidades
+MIS FINANZAS es una aplicación web desarrollada con Python, Flask y SQLite que permite administrar y controlar los gastos personales de manera sencilla, ordenada y eficiente.
 
-- Inicio de sesión con usuario y contraseña.
-- Registro de gastos: fecha, descripción y monto en soles.
-- Panel con total acumulado, total del mes, total del día y cantidad de movimientos.
-- Historial de los últimos gastos y opción para eliminar registros.
-- Reporte con filtros por fecha inicial y final.
-- Exportación del reporte a CSV, compatible con Excel.
-- Base de datos SQLite creada automáticamente al iniciar la aplicación.
+El sistema permite registrar gastos, consultar el historial, visualizar resúmenes y generar reportes para facilitar el control de las finanzas personales.
 
-## Requisitos
+## 🚀 Tecnologías utilizadas
 
-- Python 3.10 o superior.
-- pip.
+- Python
+- Flask
+- SQLite
+- HTML5
+- CSS3
+- Bootstrap
 
-## Instalación y ejecución
-
-1. Descarga o clona este repositorio.
-2. Abre una terminal dentro de la carpeta del proyecto.
-
-### Windows
-
-Crea un entorno virtual:
-
-    python -m venv venv
-
-Activa el entorno virtual:
-
-    venv\Scripts\activate
-
-### Linux / macOS
-
-    python3 -m venv venv
-    source venv/bin/activate
-
-3. Instala las dependencias:
-
-    pip install -r requirements.txt
-
-4. Ejecuta la aplicación:
-
-    python app.py
-
-5. Abre tu navegador e ingresa a:
-
-    http://127.0.0.1:5000
-
-## Credenciales de acceso
+## 🔐 Credenciales de acceso
 
 | Campo | Valor |
 |---|---|
 | Usuario | `admin` |
 | Contraseña | `123` |
 
-La cuenta se crea automáticamente la primera vez que se inicia el programa. La contraseña se almacena como hash en SQLite.
+## ⚙️ Funcionalidades principales
 
-## Capturas de pantalla
+1. Inicio de sesión mediante usuario y contraseña.
+2. Registro de gastos con fecha, descripción y monto.
+3. Visualización del historial de gastos.
+4. Resumen general de gastos registrados.
+5. Generación de reportes por fechas.
+6. Eliminación de registros de gastos.
+7. Exportación de información en formato CSV.
+8. Almacenamiento de información mediante SQLite.
 
-Las siguientes imágenes corresponden a las pantallas reales del sistema Mis Finanzas.
+## 📸 Capturas de pantalla
 
 ### 1. Inicio de sesión
 
 ![Inicio de sesión](capturas/login.png)
 
-### 2. Panel principal y registro de gastos
+### 2. Panel principal
 
 ![Panel principal](capturas/dashboard.png)
 
-### 3. Reporte y exportación
+### 3. Reportes de gastos
 
-![Reporte de gastos](capturas/report.png)
+![Reportes](capturas/report.png)
 
-## ¿Cómo funciona?
+## 💻 Instalación y ejecución
 
-1. El usuario ingresa con las credenciales indicadas.
-2. En el panel principal completa fecha, descripción y monto; luego selecciona **Guardar gasto**.
-3. El sistema almacena el movimiento en la base de datos `gastos.db` y actualiza los totales.
-4. En **Reportes** puede indicar un periodo con las fechas Desde y Hasta y seleccionar **Filtrar**.
-5. Con **Exportar CSV** descarga los movimientos del periodo para abrirlos en una hoja de cálculo.
-6. La opción **Cerrar sesión** finaliza el acceso.
+### Requisitos previos
 
-## Estructura del proyecto
+- Tener instalado Python 3.
+- Tener instalado Git (opcional).
 
-    control_gastos/
-    ├── app.py
-    ├── requirements.txt
-    ├── README.md
-    ├── .gitignore
-    ├── static/
-    │   └── style.css
-    ├── templates/
-    │   ├── base.html
-    │   ├── login.html
-    │   ├── dashboard.html
-    │   └── report.html
-    └── capturas/
-        ├── login.png
-        ├── dashboard.png
-        └── report.png
+### Pasos para ejecutar el proyecto
 
-## Tecnologías utilizadas
+**1. Clonar el repositorio**
 
-- Python 3
-- Flask
-- SQLite
-- HTML5 y CSS3
+```bash
+git clone https://github.com/rmendez-lang/control-gastos-flask.git
+```
 
-## Nota de seguridad
+**2. Ingresar a la carpeta**
 
-Las credenciales `admin` / `123` se incluyen porque forman parte de los requisitos académicos. No deben utilizarse en un sistema real. Antes de publicar una aplicación para uso real, configura una clave secreta segura mediante la variable de entorno `SECRET_KEY`, cambia las credenciales y utiliza HTTPS.
+```bash
+cd control-gastos-flask
+```
 
-## Autor
+**3. Crear el entorno virtual**
 
-Robin Méndez Solórzano
+```bash
+python -m venv venv
+```
 
-Proyecto académico – Sistema de Control de Gastos.
+**4. Activar el entorno virtual en Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**5. Instalar las dependencias**
+
+```bash
+pip install -r requirements.txt
+```
+
+**6. Ejecutar la aplicación**
+
+```bash
+python app.py
+```
+
+**7. Abrir en el navegador**
+
+```text
+http://127.0.0.1:5000
+```
+
+## 🗄️ Base de datos
+
+El sistema utiliza SQLite para almacenar los registros de gastos. La base de datos permite conservar la información registrada por el usuario.
+
+## 📂 Estructura del proyecto
+
+```text
+control-gastos-flask/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── capturas/
+│   ├── login.png
+│   ├── dashboard.png
+│   └── report.png
+│
+├── templates/
+│
+└── static/
+```
+
+## 👨‍💻 Autor
+
+Proyecto académico desarrollado como práctica de programación web utilizando Python, Flask y SQLite.
+
+## 🔗 Repositorio de GitHub
+
+https://github.com/rmendez-lang/control-gastos-flask
+
+---
+
+**MIS FINANZAS – Controla tus gastos, organiza tu dinero y mejora tus finanzas.**
