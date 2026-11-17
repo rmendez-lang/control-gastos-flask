@@ -1,4 +1,3 @@
-
 # Mis Finanzas – Sistema de Control de Gastos
 
 Aplicación web académica desarrollada con Python, Flask y SQLite. Permite iniciar sesión, registrar gastos, consultar un resumen y generar reportes por rango de fechas con opción de exportación CSV.
