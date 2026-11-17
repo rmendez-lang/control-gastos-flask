@@ -1,6 +1,7 @@
+
 # Mis Finanzas – Sistema de Control de Gastos
 
-Aplicación web académica desarrollada con **Python, Flask y SQLite**. Permite iniciar sesión, registrar gastos, consultar un resumen y generar reportes por rango de fechas con opción de exportación CSV.
+Aplicación web académica desarrollada con Python, Flask y SQLite. Permite iniciar sesión, registrar gastos, consultar un resumen y generar reportes por rango de fechas con opción de exportación CSV.
 
 ## Funcionalidades
 
@@ -21,29 +22,33 @@ Aplicación web académica desarrollada con **Python, Flask y SQLite**. Permite 
 
 1. Descarga o clona este repositorio.
 2. Abre una terminal dentro de la carpeta del proyecto.
-3. (Recomendado) Crea y activa un entorno virtual:
 
-   **Windows**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   ```
+### Windows
 
-   **Linux / macOS**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+Crea un entorno virtual:
 
-4. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-5. Ejecuta la aplicación:
-   ```bash
-   python app.py
-   ```
-6. Abre en tu navegador: <http://127.0.0.1:5000>
+    python -m venv venv
+
+Activa el entorno virtual:
+
+    venv\Scripts\activate
+
+### Linux / macOS
+
+    python3 -m venv venv
+    source venv/bin/activate
+
+3. Instala las dependencias:
+
+    pip install -r requirements.txt
+
+4. Ejecuta la aplicación:
+
+    python app.py
+
+5. Abre tu navegador e ingresa a:
+
+    http://127.0.0.1:5000
 
 ## Credenciales de acceso
 
@@ -53,9 +58,6 @@ Aplicación web académica desarrollada con **Python, Flask y SQLite**. Permite 
 | Contraseña | `123` |
 
 La cuenta se crea automáticamente la primera vez que se inicia el programa. La contraseña se almacena como hash en SQLite.
-
-## Capturas de pantalla
-
 
 ## Capturas de pantalla
 
@@ -73,7 +75,6 @@ Las siguientes imágenes corresponden a las pantallas reales del sistema Mis Fin
 
 ![Reporte de gastos](capturas/report.png)
 
-
 ## ¿Cómo funciona?
 
 1. El usuario ingresa con las credenciales indicadas.
@@ -85,22 +86,22 @@ Las siguientes imágenes corresponden a las pantallas reales del sistema Mis Fin
 
 ## Estructura del proyecto
 
-```text
-control_gastos/
-├── app.py                 # Rutas, autenticación y lógica de la aplicación
-├── requirements.txt       # Dependencias
-├── README.md              # Documentación
-├── .gitignore             # Archivos excluidos de Git
-├── gastos.db              # Se genera automáticamente (no se sube a GitHub)
-├── static/
-│   └── style.css          # Estilos de la aplicación
-├── templates/
-│   ├── base.html
-│   ├── login.html
-│   ├── dashboard.html
-│   └── report.html
-└── capturas/              # Imágenes ilustrativas incluidas en el README
-```
+    control_gastos/
+    ├── app.py
+    ├── requirements.txt
+    ├── README.md
+    ├── .gitignore
+    ├── static/
+    │   └── style.css
+    ├── templates/
+    │   ├── base.html
+    │   ├── login.html
+    │   ├── dashboard.html
+    │   └── report.html
+    └── capturas/
+        ├── login.png
+        ├── dashboard.png
+        └── report.png
 
 ## Tecnologías utilizadas
 
@@ -114,5 +115,7 @@ control_gastos/
 Las credenciales `admin` / `123` se incluyen porque forman parte de los requisitos académicos. No deben utilizarse en un sistema real. Antes de publicar una aplicación para uso real, configura una clave secreta segura mediante la variable de entorno `SECRET_KEY`, cambia las credenciales y utiliza HTTPS.
 
 ## Autor
+
+Robin Méndez Solórzano
 
 Proyecto académico – Sistema de Control de Gastos.
