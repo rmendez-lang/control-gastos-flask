@@ -56,11 +56,14 @@ La cuenta se crea automáticamente la primera vez que se inicia el programa. La 
 
 ## Capturas de pantalla
 
-Las siguientes imágenes muestran una **vista ilustrativa del diseño y las pantallas previstas**. Para la entrega final, ejecuta la aplicación en tu equipo y reemplaza estas imágenes por capturas reales de tu navegador, con datos de prueba propios.
+
+## Capturas de pantalla
+
+Las siguientes imágenes corresponden a las pantallas reales del sistema Mis Finanzas.
 
 ### 1. Inicio de sesión
 
-![Pantalla de inicio de sesión](capturas/login.png)
+![Inicio de sesión](capturas/login.png)
 
 ### 2. Panel principal y registro de gastos
 
@@ -69,6 +72,7 @@ Las siguientes imágenes muestran una **vista ilustrativa del diseño y las pant
 ### 3. Reporte y exportación
 
 ![Reporte de gastos](capturas/report.png)
+
 
 ## ¿Cómo funciona?
 
